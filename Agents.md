@@ -16,7 +16,7 @@ If you encounter build errors after decompilation - fix them and checking with b
 
 
 # ADDITIONAL TOOLS
-
+https://nikita36078.github.io/J2ME_Docs/ - documantation. 
 https://github.com/shinovon/AntiALW1 - AntiALW1 - a tool required for quick removement of DRM. It cannot be considered as piracy because purchasing is impossible nowadays; It is used
 exceptionally for academic and preservation purposes. 
 
