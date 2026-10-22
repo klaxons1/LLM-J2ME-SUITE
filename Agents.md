@@ -9,8 +9,7 @@ https://github.com/klaxons1/tools_linux_jdk8 - jdk 8 linux x64 precompiled.
 J2ME building libs is in uei/ folder of that repo.
 And use proguard.jar to generate a stackmap; otherwise the output jar wont launch on actual kvm/phoneme/any other built-in Virtual Machine.
 # DECOMPILATION
-That's https://github.com/jetBrains/fernflower - decompiler.
-Or you can use https://github.com/hourianto/sporeflower/ - fork of fernflower purposed for J2ME decompilation.
+You can use https://github.com/hourianto/sporeflower/ - fork of fernflower purposed for J2ME decompilation. You can build it with jdk 8.
 Check if the input jar is obfuscated(classes are named like a,b,c etc except the main one); if not - don't use -ren=1; if yes - use PGD - proguard deobfuscator. It is in that repo.
 If you encounter build errors after decompilation - fix them and checking with bytecode of original JAR is MANDATORY.
 
