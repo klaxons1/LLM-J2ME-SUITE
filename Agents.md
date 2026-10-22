@@ -24,6 +24,7 @@ exceptionally for academic and preservation purposes.
 3. Avoid anonymous classes where possible, do not overcomplicate software logic with OOP, inheritance, virtual calls. Use classes in a way similar to C structures. Storing functions in different class files is fine, as modularity can improve code maintainability.
 4. When implementing complex and heavy logic (such as software rasterization) - keep hot loops as simple as possible. Avoid heavy math operations and branching. Preload fields into function-local variables when the fields do not change during function execution. Do not depend on multiple Thread objects - J2ME devices do not have multiple CPU cores. Threads are fine only for applications where background processing or loading is required, such as online service clients.
 5. HEAP LIMIT - S40 - 2MB, S60 - 16 MB, Sony Erricson - 8 MB. But some JVM have separate heap for Image objects.
+6. There is no Math.atan and Math.floor in J2ME.
 
 # Good examples of games
 https://github.com/shinovon/TheEscapists-j2me - good example of fast enough 2D game. Could use that as a reference.
