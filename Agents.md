@@ -9,12 +9,12 @@ And use proguard.jar to generate a stackmap; otherwise the output jar wont launc
 
 # DECOMPILATION
 You can use https://github.com/hourianto/sporeflower/ - fork of fernflower purposed for J2ME decompilation. You can build it with jdk 8.
-Check if the input jar is obfuscated(classes are named like a,b,c etc except the main one); if not - don't use -ren=1; if yes - use PGD - proguard deobfuscator. It is in that repo.
+Check if the input jar is obfuscated(classes are named like a, b, c except the main one); if not - don't use -ren=1; if yes - use PGD - proguard deobfuscator. It is in that repo.
 If you encounter build errors after decompilation - fix them and checking with bytecode of original JAR is MANDATORY.
 
 
 # ADDITIONAL TOOLS
-https://nikita36078.github.io/J2ME_Docs/ - documantation. 
+https://nikita36078.github.io/J2ME_Docs/ - documentation. 
 https://github.com/shinovon/AntiALW1 - AntiALW1 - a tool required for quick removement of DRM. It cannot be considered as piracy because purchasing is impossible nowadays; It is used
 exceptionally for academic and preservation purposes. 
 
@@ -26,7 +26,7 @@ exceptionally for academic and preservation purposes.
 5. HEAP LIMIT - S40 - 2MB, S60 - 16 MB, Sony Erricson - 8 MB. But some JVM have separate heap for Image objects.
 6. There is no Math.atan/Math.floor/Math.pow/Math.log in J2ME. Various approximations can be used.
 7. Do not depend on multiple Thread objects - J2ME devices do not have multiple CPU cores. Threads are fine only for applications where background processing or loading is required, such as online service clients.
-
+8. If you want to mess with .m3g files pyM3G can be used https://github.com/BaalNetbek/PyM3G/. Be careful - lib in experimetal state.
 # Good examples of games
 https://github.com/shinovon/TheEscapists-j2me - good example of fast enough 2D game. Could use that as a reference.
 
