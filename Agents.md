@@ -8,7 +8,7 @@ J2ME building libs is in uei/ folder of that repo.
 And use proguard.jar to generate a stackmap; otherwise the output jar wont launch on actual kvm/phoneme/any other built-in Virtual Machine.
 
 # DECOMPILATION
-USE ONLY AND ONLY https://github.com/hourianto/sporeflower/ - fork of fernflower purposed for J2ME decompilation. You can build it with jdk 8.
+USE ONLY AND ONLY https://github.com/hourianto/sporeflower/ - fork of fernflower purposed for J2ME decompilation. IT IS REALLY INMPORTANT TO USE SPOREFLOWER! You can build it with jdk 8.
 Check if the input jar is obfuscated(classes are named like a, b, c except the main one); if not - don't use -ren=1; if yes - use PGD - proguard deobfuscator. It is in that repo.
 If you encounter build errors after decompilation - fix them and checking with bytecode of original JAR is MANDATORY.
 
