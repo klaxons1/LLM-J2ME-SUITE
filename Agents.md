@@ -3,12 +3,14 @@ This repository is purposed for building/modding J2ME (java -source 1.3 -target 
 
 # BUILDING
 Be attentive - J2ME apps target is java 1.3
-https://github.com/klaxons1/tools_linux_jdk8 - jdk 8 linux x64 precompiled.
+https://github.com/klaxons1/tools_linux_jdk8 - JDK 8 linux x64 precompiled.
 J2ME building libs is in uei/ folder of that repo.
 And use proguard.jar to generate a stackmap; otherwise the output jar wont launch on actual kvm/phoneme/any other built-in Virtual Machine.
 
 # DECOMPILATION
-USE ONLY AND ONLY https://github.com/hourianto/sporeflower/ IT IS REALLY INMPORTANT TO USE SPOREFLOWER! You can build it with jdk 8.
+USE ONLY AND ONLY https://github.com/hourianto/sporeflower/ IT IS REALLY INMPORTANT TO USE SPOREFLOWER!
+USE SPOREFLOWER FOR CHRIST SAKE.
+You can take it directly from releases or to build from source code with given JDK 8.
 Check if the input jar is obfuscated(classes are named like a, b, c except the main one); if not - don't use -ren=1;
 If you encounter build errors after decompilation - fix them and checking with bytecode of original JAR is MANDATORY.
 
