@@ -28,7 +28,11 @@ exceptionally for academic and preservation purposes.
 5. HEAP LIMIT - S40 - 2MB, S60 - 16 MB, Sony Erricson - 8 MB. But some JVM have separate heap for Image objects.
 6. There is no Math.atan/Math.floor/Math.pow/Math.log in J2ME. Various approximations can be used.
 7. Do not depend on multiple Thread objects - J2ME devices do not have multiple CPU cores. Threads are fine only for applications where background processing or loading is required, such as online service clients.
-8. If you want to mess with .m3g files pyM3G can be used https://github.com/BaalNetbek/PyM3G/. Be careful - lib in experimental state.
+# M3G (JSR184) related tips:
+1. If you want to mess with .m3g files pyM3G can be used https://github.com/BaalNetbek/PyM3G/. Be careful - lib is in an experimental state.
+2. Use 8-bit textures when applicable to reduce heap memory usage. Pngquant gives the best results as of November 2026. You can't just load 8-bit PNG in M3G, it will always load as 24/32-bit texture. You have to load 8-bit textures explicitly either via Image2D(format, w, h, image, palette) constructor (you can get image and palette arrays by manually parsing BMP files) or via Loader.load if you store the 8-bit texture in a .M3G container. MIP-mapping doesn't work with 8-bit textures on real hardware.
+3. S40 and (most) SE cellphones do not support texture resolutions above 256x.
+4. M3G textures are stored in heap memory on S40 devices and in main RAM on S60 ones.
 # Good examples of games
 https://github.com/shinovon/TheEscapists-j2me - good example of fast enough 2D game. Could use that as a reference.
 
