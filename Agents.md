@@ -10,7 +10,8 @@ And use proguard.jar to generate a stackmap; otherwise the output jar wont launc
 # DECOMPILATION
 USE ONLY AND ONLY https://github.com/hourianto/sporeflower/ IT IS REALLY INMPORTANT TO USE SPOREFLOWER!
 USE SPOREFLOWER FOR CHRIST SAKE.
-You can take it directly from releases or to build from source code with given JDK 8.
+You can take it directly from releases or to build it from source code.
+If you can't download it from releases or building is not an option use precompiled version. It is located in /libs/sporeflower-linux-x86_64.tar.gz (v2026.11.10.47.1).
 Check if the input jar is obfuscated(classes are named like a, b, c except the main one).
 If you encounter build errors after decompilation - fix them and checking with bytecode of original JAR is MANDATORY.
 
